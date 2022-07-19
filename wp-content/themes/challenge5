@@ -1,0 +1,9 @@
+# Ignore everything
+pilopress/tailwind/*
+
+# Keep gitkeep
+!pilopress/layouts/.gitkeep
+!pilopress/tailwind/.gitkeep
+
+# Keep layouts
+!pilopress/layouts/hero

@@ -1,0 +1,324 @@
+@font-face {
+  font-family: 'TT Regular';
+  src: url("../fonts/tt-commons-regular.woff2"); }
+@font-face {
+  font-family: 'TT Medium';
+  src: url("../fonts/tt-commons-medium.woff2"); }
+@font-face {
+  font-family: 'TT Bold';
+  src: url("../fonts/tt-commons-bold.woff2"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000322}}
+.toplevel_page_piloboard-settings,
+.tools_page_piloboard-settings {
+  background: #2139E1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000327}}
+  .toplevel_page_piloboard-settings #wpwrap #wpcontent,
+  .tools_page_piloboard-settings #wpwrap #wpcontent {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000333}}
+    .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody,
+    .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody {
+      padding: 20px 0;
+      width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000337}}
+      .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content,
+      .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content {
+        padding-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000340}}
+        .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper,
+        .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper {
+          background-color: white;
+          border-radius: 10px;
+          max-width: 600px;
+          margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000346}}
+          .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper .content,
+          .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper .content {
+            background: white;
+            padding: 40px;
+            text-align: center;
+            -webkit-box-shadow: 0 0 5px -1px #dedede;
+                    box-shadow: 0 0 5px -1px #dedede;
+            border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000353}}
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper .content .logo,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper .content .logo {
+              margin-bottom: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000359}}
+          .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence,
+          .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence {
+            width: 100% !important;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            border: 2px solid #2139E1;
+            color: #2139E1;
+            font-size: 1rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000369}}
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence:focus,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence:focus {
+              outline: none;
+              border-color: #ff8066;
+              -webkit-box-shadow: none;
+                      box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000375}}
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence::-webkit-input-placeholder,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence::-webkit-input-placeholder {
+              color: #2139E1;
+              font-weight: 300; }
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence:-ms-input-placeholder,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence:-ms-input-placeholder {
+              color: #2139E1;
+              font-weight: 300; }
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence::-ms-input-placeholder,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence::-ms-input-placeholder {
+              color: #2139E1;
+              font-weight: 300; }
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence::placeholder,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence::placeholder {
+              color: #2139E1;
+              font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000380}}
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence:disabled,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form #piloboard_licence:disabled {
+              background: #e6e8f5;
+              border: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000386}}
+          .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form button[type=submit],
+          .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form button[type=submit] {
+            margin: 0 auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 0;
+            background: #ff8066;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 15px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\0000398}}
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form button[type=submit]:disabled,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form button[type=submit]:disabled {
+              cursor: not-allowed; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003102}}
+            .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form button[type=submit]:hover,
+            .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content .piloboard-wrapper form button[type=submit]:hover {
+              background: #c22400; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003110}}
+        .toplevel_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content > div:not(.piloboard-wrapper),
+        .tools_page_piloboard-settings #wpwrap #wpcontent #wpbody #wpbody-content > div:not(.piloboard-wrapper) {
+          display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003119}}
+  .toplevel_page_piloboard-settings #wpfooter,
+  .tools_page_piloboard-settings #wpfooter {
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003127}}
+.wp-admin #piloboard-commercial .inside {
+  background: white;
+  margin: 0;
+  padding: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003132}}
+  .wp-admin #piloboard-commercial .inside .box-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003136}}
+    .wp-admin #piloboard-commercial .inside .box-wrapper .people {
+      position: relative;
+      background: white;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003141}}
+      .wp-admin #piloboard-commercial .inside .box-wrapper .people .picture {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        background: aliceblue;
+        margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003148}}
+        .wp-admin #piloboard-commercial .inside .box-wrapper .people .picture img {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003157}}
+      .wp-admin #piloboard-commercial .inside .box-wrapper .people .details .name {
+        font-family: "TT Bold";
+        color: #2139E1;
+        font-size: 17px;
+        line-height: 150%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003164}}
+      .wp-admin #piloboard-commercial .inside .box-wrapper .people .details .job {
+        font-family: 'TT Regular';
+        color: #0C155A;
+        font-size: 15px;
+        line-height: 150%;
+        padding-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003174}}
+      .wp-admin #piloboard-commercial .inside .box-wrapper .people .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003178}}
+        .wp-admin #piloboard-commercial .inside .box-wrapper .people .contact .email {
+          margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003182}}
+        .wp-admin #piloboard-commercial .inside .box-wrapper .people .contact i {
+          color: #ff8066; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003187}}
+      .wp-admin #piloboard-commercial .inside .box-wrapper .people:last-child {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003197}}
+.wp-admin #piloboard-forfait .inside {
+  background: white;
+  margin: 0;
+  padding: 20px;
+  border-radius: 0 0 10px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003204}}
+  .wp-admin #piloboard-forfait .inside .box-wrapper .box-item {
+    position: relative;
+    background: #F2F3FD;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003212}}
+    .wp-admin #piloboard-forfait .inside .box-wrapper .box-item .picture {
+      width: 50px;
+      min-width: 50px;
+      height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-right: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003222}}
+      .wp-admin #piloboard-forfait .inside .box-wrapper .box-item .picture i::before {
+        color: #2139E1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003226}}
+      .wp-admin #piloboard-forfait .inside .box-wrapper .box-item .picture i::after {
+        color: #ff8066;
+        opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003233}}
+    .wp-admin #piloboard-forfait .inside .box-wrapper .box-item .details {
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003236}}
+      .wp-admin #piloboard-forfait .inside .box-wrapper .box-item .details .type {
+        text-transform: uppercase;
+        color: #2139E1;
+        font-size: 17px;
+        font-family: 'TT Bold'; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003243}}
+      .wp-admin #piloboard-forfait .inside .box-wrapper .box-item .details .info {
+        font-family: 'TT Regular';
+        color: #0C155A;
+        font-size: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003250}}
+    .wp-admin #piloboard-forfait .inside .box-wrapper .box-item:last-child {
+      margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003260}}
+.wp-admin #piloboard-faq .inside {
+  background: white;
+  margin: 0;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  max-height: 400px;
+  overflow-y: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003269}}
+  .wp-admin #piloboard-faq .inside .box-wrapper .box-item {
+    position: relative;
+    background: #F2F3FD;
+    padding: 20px;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003277}}
+    .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details {
+      font-family: 'TT Medium';
+      font-weight: 400;
+      font-size: 15px;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003283}}
+      .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        cursor: pointer;
+        font-family: "TT Bold";
+        color: #2139E1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003291}}
+        .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .title .picture {
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003294}}
+          .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .title .picture i {
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003298}}
+          .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .title .picture.open {
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003301}}
+            .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .title .picture.open i {
+              color: #ff8066; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003308}}
+      .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .tag {
+        font-size: 14px;
+        background: #ff8066;
+        display: inline-block;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 100px;
+        margin: 10px;
+        margin-left: 0;
+        margin-bottom: 0;
+        font-family: "TT Medium"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003320}}
+        .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .tag:last-child {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003325}}
+      .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .content {
+        display: none;
+        font-family: "TT Regular"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003329}}
+        .wp-admin #piloboard-faq .inside .box-wrapper .box-item .details .content.open {
+          display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/laragon\/www\/pip-dev\/wp-content\/plugins\/piloboard\/assets\/style\/main\.scss}line{font-family:\00003336}}
+    .wp-admin #piloboard-faq .inside .box-wrapper .box-item:last-child {
+      margin-bottom: 0; }

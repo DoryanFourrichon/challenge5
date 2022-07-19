@@ -1,0 +1,8 @@
+.weather {
+    @apply flex flex-col items-center border-solid p-4 mt-4 ml-4 w-60;
+}
+
+.weather__header{
+    @apply text-center;
+}
+

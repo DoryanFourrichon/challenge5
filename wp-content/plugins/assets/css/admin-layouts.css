@@ -1,0 +1,69 @@
+.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content > .values > .layout[data-layout],
+.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content > .values > .layout[data-layout]:first-child {
+    margin-top: 0 !important;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content > .values > .layout[data-layout].-collapsed > .acf-fc-layout-handle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.acfe-layout-title-text,
+.acfe-layout-title-text:hover {
+    color: #23282d;
+    background: #F5F5F5;
+    padding: 0 0.25rem;
+    border-radius: 5px;
+}
+
+/* Fix collection label display */
+.acfe-layout-title-text .pip_collection {
+    display: inline-block;
+    width: auto;
+    margin: auto 5px auto auto;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content > .values > .layout[data-layout] > .acf-fc-layout-controls {
+    padding: 8px 10px;
+    z-index: 2;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content > .values > .layout > .acfe-fc-placeholder {
+    padding: 0 !important;
+    border-color: transparent !important;
+}
+
+.acf-field.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content:not(.empty) > .values {
+    opacity: 1;
+}
+
+.acf-field.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content:not(.empty) > .values:hover > .layout {
+    opacity: 0.65;
+}
+
+.acf-field.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content:not(.empty) > .values > .layout:hover {
+    outline: 2px solid #444;
+    opacity: 1 !important;
+}
+
+.acf-field.acf-field-flexible-content[data-name="pip_flexible"] > .acf-input > .acf-flexible-content:not(.empty) > .values > .layout > .acf-fields {
+    border-color: transparent !important;
+}
+
+/* Improve readability for hidden layout */
+.layout.acfe-flexible-layout-hidden>.acfe-fc-placeholder{
+    filter: grayscale(1) !important;
+}
+.layout.acfe-flexible-layout-hidden>.acfe-fc-placeholder::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient( -45deg,lightgray, lightgray 4px, #ffffff -1px, #ffffff 23px ) !important;
+}

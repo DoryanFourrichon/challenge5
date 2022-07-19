@@ -1,0 +1,442 @@
+/* Pilo'Press Flexible: Layout */
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content.-empty>.values {
+    margin-bottom: 0 !important;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout {
+    border: 0;
+    background: none;
+    margin-top: 20px !important;
+}
+
+/* Add style for layout with error */
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout.acfe-flexible-modal-edit-error {
+    outline: 2px dashed #d94f4f;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout:first-child {
+    margin-top: -25px !important;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout:hover {}
+
+/* Layouts modal */
+.acfe-modal.-open .acfe-modal-content .acfe-flex-container ul li a {
+    text-align: center;
+}
+
+.acfe-modal.-open .acfe-modal-content .acfe-flex-container ul li a span {
+    display: inline-block !important;
+}
+
+.acfe-modal.-open .acfe-modal-content .acfe-flex-container ul li a span.badge {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 1px 0 -1px 2px;
+    padding: 0 5px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #d94f4f;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: center;
+    z-index: 26;
+}
+
+/* Handle */
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acf-fc-layout-handle {
+    border: 2px dashed transparent !important;
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout:hover>.acf-fc-layout-handle {
+    visibility: visible;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acf-fc-layout-handle:hover {
+    border-color: #ccc !important;
+}
+
+/* Order */
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acf-fc-layout-handle>.acf-fc-layout-order {
+    display: none;
+}
+
+/* Title */
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acf-fc-layout-handle>.acfe-layout-title {
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acf-fc-layout-handle>.acfe-layout-title input {
+    color: #aaa;
+    text-transform: uppercase;
+    background: none;
+    min-height: 14px !important;
+    height: 14px !important;
+}
+
+/* Control */
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acf-fc-layout-controls {
+    display: none;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout:hover>.acf-fc-layout-controls {
+    display: block;
+    z-index: 100;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acf-fc-layout-controls>.-collapse {
+    display: none;
+}
+
+/* Placeholder */
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acfe-fc-placeholder {
+    border: 2px dashed transparent;
+    padding: 10px;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout:hover>.acfe-fc-placeholder {
+    border-color: #ccc;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acfe-fc-placeholder>.acfe-fc-overlay {
+    display: none;
+}
+
+/* Fields */
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout>.acf-fields {
+    border: 2px dashed #ccc;
+    background: #fff;
+}
+
+.acf-field-flexible-content[data-name="pip_flexible"]>.acf-input>.acf-flexible-content>.values>.layout:hover>.acf-fields {
+    border-color: #ccc;
+}
+
+/* Admin Menu: Gray (None) */
+#toplevel_page_pilopress .wp-menu-image.svg {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iI2EwYTVhYSI+PHBhdGggZD0iTTEwIC4yQzQuNi4yLjMgNC42LjMgMTBzNC40IDkuOCA5LjcgOS44YzIuNiAwIDUuMS0xIDYuOS0yLjggMS44LTEuOCAyLjgtNC4zIDIuOC02LjkgMC01LjUtNC4zLTkuOS05LjctOS45em02LjQgMTYuM2MtMS43IDEuNy00IDIuNi02LjQgMi42LTUgMC05LTQuMS05LTkuMVM1IC45IDEwIC45IDE5IDUgMTkgMTBjMCAyLjUtLjkgNC43LTIuNiA2LjV6Ii8+PHBhdGggZD0iTTEwIDUuM2MtMi41IDAtNC42IDIuMS00LjYgNC43di41Yy4yIDEuOCAxLjQgMy4zIDMgMy45LjUuMiAxIC4zIDEuNS4zLjQgMCAuOS0uMSAxLjMtLjIuMSAwIC4xIDAgLjItLjEuMy0uMS41LS4yLjgtLjMgMCAwIC4xIDAgLjEtLjEgMCAwIC4xIDAgLjEtLjFoLjFzLjEgMCAuMS0uMWMwIDAgLjEgMCAuMS0uMS4yLS4yLjUtLjQuNy0uNmwuMy0uM2MuNi0uOCAxLTEuOSAxLTIuOSAwLTIuNS0yLjEtNC42LTQuNy00LjZ6bTMuMSA3LjNjMC0uMSAwLS4xIDAgMC0uNi0uNC0uNy0uOS0uNy0xLjR2LS40LS4xLS4zYzAtLjctLjItMS41LTEuNS0xLjYtLjUgMC0xLjMuMS0yLjMuNC0uMi0uMS0uNCAwLS42LjEtLjYuMi0xLjIuNC0yIC43IDAtMi4yIDEuOC00IDMuOS00IDEuNSAwIDIuOC44IDMuNSAyLjEuNC42LjYgMS4yLjYgMS45IDAgLjktLjMgMS44LS45IDIuNnoiLz48L3N2Zz4=') !important;
+}
+
+/* Admin Menu: Blue (Hover) */
+#toplevel_page_pilopress.wp-not-current-submenu a:hover .wp-menu-image.svg {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iIzAwYTBkMiI+PHBhdGggZD0iTTEwIC4yQzQuNi4yLjMgNC42LjMgMTBzNC40IDkuOCA5LjcgOS44YzIuNiAwIDUuMS0xIDYuOS0yLjggMS44LTEuOCAyLjgtNC4zIDIuOC02LjkgMC01LjUtNC4zLTkuOS05LjctOS45em02LjQgMTYuM2MtMS43IDEuNy00IDIuNi02LjQgMi42LTUgMC05LTQuMS05LTkuMVM1IC45IDEwIC45IDE5IDUgMTkgMTBjMCAyLjUtLjkgNC43LTIuNiA2LjV6Ii8+PHBhdGggZD0iTTEwIDUuM2MtMi41IDAtNC42IDIuMS00LjYgNC43di41Yy4yIDEuOCAxLjQgMy4zIDMgMy45LjUuMiAxIC4zIDEuNS4zLjQgMCAuOS0uMSAxLjMtLjIuMSAwIC4xIDAgLjItLjEuMy0uMS41LS4yLjgtLjMgMCAwIC4xIDAgLjEtLjEgMCAwIC4xIDAgLjEtLjFoLjFzLjEgMCAuMS0uMWMwIDAgLjEgMCAuMS0uMS4yLS4yLjUtLjQuNy0uNmwuMy0uM2MuNi0uOCAxLTEuOSAxLTIuOSAwLTIuNS0yLjEtNC42LTQuNy00LjZ6bTMuMSA3LjNjMC0uMSAwLS4xIDAgMC0uNi0uNC0uNy0uOS0uNy0xLjR2LS40LS4xLS4zYzAtLjctLjItMS41LTEuNS0xLjYtLjUgMC0xLjMuMS0yLjMuNC0uMi0uMS0uNCAwLS42LjEtLjYuMi0xLjIuNC0yIC43IDAtMi4yIDEuOC00IDMuOS00IDEuNSAwIDIuOC44IDMuNSAyLjEuNC42LjYgMS4yLjYgMS45IDAgLjktLjMgMS44LS45IDIuNnoiLz48L3N2Zz4=') !important;
+}
+
+/* Admin Menu: White (Active) */
+#toplevel_page_pilopress.wp-has-current-submenu .wp-menu-image.svg {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTEwIC4yQzQuNi4yLjMgNC42LjMgMTBzNC40IDkuOCA5LjcgOS44YzIuNiAwIDUuMS0xIDYuOS0yLjggMS44LTEuOCAyLjgtNC4zIDIuOC02LjkgMC01LjUtNC4zLTkuOS05LjctOS45em02LjQgMTYuM2MtMS43IDEuNy00IDIuNi02LjQgMi42LTUgMC05LTQuMS05LTkuMVM1IC45IDEwIC45IDE5IDUgMTkgMTBjMCAyLjUtLjkgNC43LTIuNiA2LjV6Ii8+PHBhdGggZD0iTTEwIDUuM2MtMi41IDAtNC42IDIuMS00LjYgNC43di41Yy4yIDEuOCAxLjQgMy4zIDMgMy45LjUuMiAxIC4zIDEuNS4zLjQgMCAuOS0uMSAxLjMtLjIuMSAwIC4xIDAgLjItLjEuMy0uMS41LS4yLjgtLjMgMCAwIC4xIDAgLjEtLjEgMCAwIC4xIDAgLjEtLjFoLjFzLjEgMCAuMS0uMWMwIDAgLjEgMCAuMS0uMS4yLS4yLjUtLjQuNy0uNmwuMy0uM2MuNi0uOCAxLTEuOSAxLTIuOSAwLTIuNS0yLjEtNC42LTQuNy00LjZ6bTMuMSA3LjNjMC0uMSAwLS4xIDAgMC0uNi0uNC0uNy0uOS0uNy0xLjR2LS40LS4xLS4zYzAtLjctLjItMS41LTEuNS0xLjYtLjUgMC0xLjMuMS0yLjMuNC0uMi0uMS0uNCAwLS42LjEtLjYuMi0xLjIuNC0yIC43IDAtMi4yIDEuOC00IDMuOS00IDEuNSAwIDIuOC44IDMuNSAyLjEuNC42LjYgMS4yLjYgMS45IDAgLjktLjMgMS44LS45IDIuNnoiLz48L3N2Zz4=') !important;
+}
+
+/* Admin Bar */
+#wp-admin-bar-pilopress .pip-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iI2EwYTVhYSI+PHBhdGggZD0iTTEwIC4yQzQuNi4yLjMgNC42LjMgMTBzNC40IDkuOCA5LjcgOS44YzIuNiAwIDUuMS0xIDYuOS0yLjggMS44LTEuOCAyLjgtNC4zIDIuOC02LjkgMC01LjUtNC4zLTkuOS05LjctOS45em02LjQgMTYuM2MtMS43IDEuNy00IDIuNi02LjQgMi42LTUgMC05LTQuMS05LTkuMVM1IC45IDEwIC45IDE5IDUgMTkgMTBjMCAyLjUtLjkgNC43LTIuNiA2LjV6Ii8+PHBhdGggZD0iTTEwIDUuM2MtMi41IDAtNC42IDIuMS00LjYgNC43di41Yy4yIDEuOCAxLjQgMy4zIDMgMy45LjUuMiAxIC4zIDEuNS4zLjQgMCAuOS0uMSAxLjMtLjIuMSAwIC4xIDAgLjItLjEuMy0uMS41LS4yLjgtLjMgMCAwIC4xIDAgLjEtLjEgMCAwIC4xIDAgLjEtLjFoLjFzLjEgMCAuMS0uMWMwIDAgLjEgMCAuMS0uMS4yLS4yLjUtLjQuNy0uNmwuMy0uM2MuNi0uOCAxLTEuOSAxLTIuOSAwLTIuNS0yLjEtNC42LTQuNy00LjZ6bTMuMSA3LjNjMC0uMSAwLS4xIDAgMC0uNi0uNC0uNy0uOS0uNy0xLjR2LS40LS4xLS4zYzAtLjctLjItMS41LTEuNS0xLjYtLjUgMC0xLjMuMS0yLjMuNC0uMi0uMS0uNCAwLS42LjEtLjYuMi0xLjIuNC0yIC43IDAtMi4yIDEuOC00IDMuOS00IDEuNSAwIDIuOC44IDMuNSAyLjEuNC42LjYgMS4yLjYgMS45IDAgLjktLjMgMS44LS45IDIuNnoiLz48L3N2Zz4=") !important;
+    float: left;
+    width: 26px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    background-size: 20px;
+}
+
+/* Admin Builder Page */
+.postbox#pip-flexible-layouts>.inside {
+    padding: 0;
+    margin: 0;
+}
+
+td.acf-layouts-category a,
+td.acf-layouts-collection a {
+    word-wrap: break-word;
+    padding: 2px 5px;
+    margin: 0 1px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, .06);
+    color: #23282d;
+}
+
+#pilopress-flexible-layouts-table {
+    border: 0;
+}
+
+#pilopress-flexible-layouts-table .column-acf-fg-count,
+#pilopress-flexible-layouts-table .column-acfe-local,
+#pilopress-flexible-layouts-table .column-acfe-locations {
+    text-align: center;
+}
+
+#pilopress-flexible-layouts-table .column-acf-fg-count {
+    width: 70px;
+}
+
+.column-acf-layouts-category,
+.column-acf-layouts-collection {
+    width: 125px;
+}
+
+/* Admin tools */
+#acf-admin-tool-pilopress_tool_styles_export ul {
+    column-width: 200px;
+}
+
+/* Styles Options Pages */
+
+/* Tabs */
+body.pilopress_page_pip_styles_configuration .inside,
+body.admin_page_pip_styles_tailwind_module .inside {
+    background: none;
+}
+
+body.pilopress_page_pip_styles_configuration .inside .acf-tab-wrap,
+body.admin_page_pip_styles_tailwind_module .inside .acf-tab-wrap {
+    background: none;
+}
+
+body.pilopress_page_pip_styles_configuration .inside .acf-tab-wrap ul.acf-tab-group,
+body.admin_page_pip_styles_tailwind_module .inside .acf-tab-wrap ul.acf-tab-group {
+    border: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body.pilopress_page_pip_styles_configuration .inside .acf-tab-wrap ul.acf-tab-group li,
+body.admin_page_pip_styles_tailwind_module .inside .acf-tab-wrap ul.acf-tab-group li {
+    margin-right: 20px;
+}
+
+body.pilopress_page_pip_styles_configuration .inside .acf-tab-wrap ul.acf-tab-group li a,
+body.admin_page_pip_styles_tailwind_module .inside .acf-tab-wrap ul.acf-tab-group li a {
+    color: #999 !important;
+    border: 0;
+    padding: 0;
+    background: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+body.pilopress_page_pip_styles_configuration .inside .acf-tab-wrap ul.acf-tab-group li.active>a,
+body.admin_page_pip_styles_tailwind_module .inside .acf-tab-wrap ul.acf-tab-group li.active>a {
+    color: #23282d !important;
+}
+
+/* Actions buttons */
+body.admin_page_pip_styles_tailwind_module #major-publishing-actions,
+body.admin_page_pip_styles_fonts #major-publishing-actions,
+body.admin_page_pip_styles_image_sizes #major-publishing-actions,
+body.admin_page_pip_styles_modules #major-publishing-actions,
+body.pilopress_page_pip_styles_configuration #major-publishing-actions {
+    text-align: right;
+}
+
+body.admin_page_pip_styles_tailwind_module #publishing-action,
+body.admin_page_pip_styles_fonts #publishing-action,
+body.admin_page_pip_styles_image_sizes #publishing-action,
+body.admin_page_pip_styles_modules #publishing-action,
+body.pilopress_page_pip_styles_configuration #publishing-action {
+    display: inline-block;
+    text-align: left;
+    float: none;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+body.pilopress_page_pip_styles_configuration #publishing-action .spinner,
+body.admin_page_pip_styles_fonts #publishing-action .spinner,
+body.admin_page_pip_styles_image_sizes #publishing-action .spinner,
+body.admin_page_pip_styles_modules #publishing-action .spinner,
+body.admin_page_pip_styles_tailwind_module #publishing-action .spinner {
+    display: none;
+}
+
+/* Pilo'Press Dashboard */
+.toplevel_page_pilopress .config-status .dashicons-yes {
+    color: #46B450;
+}
+
+.toplevel_page_pilopress .config-status .dashicons-no-alt {
+    color: #d94f4f;
+}
+
+.toplevel_page_pilopress .pilopress-layouts-table .widefat,
+.toplevel_page_pilopress .pilopress-components-table .widefat {
+    border: none;
+}
+
+.toplevel_page_pilopress .pilopress-layouts-table .widefat .pilopress_counter,
+.toplevel_page_pilopress .pilopress-components-table .widefat .pilopress_counter {
+    text-align: center;
+}
+
+.toplevel_page_pilopress .wp-heading-inline {
+    display: flex;
+}
+
+.toplevel_page_pilopress #pilopress_layouts_count,
+.toplevel_page_pilopress #pilopress_components_count {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 1px 0 -1px 2px;
+    padding: 0 5px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #007cba;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.toplevel_page_pilopress #pilopress_layouts_actions .inside,
+.toplevel_page_pilopress #pilopress_components_actions .inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toplevel_page_pilopress #pilopress_layouts_actions .inside h4,
+.toplevel_page_pilopress #pilopress_components_actions .inside h4 {
+    margin-bottom: 0;
+}
+
+/* Pilo'Press: Builder */
+.pip-builder #misc-publishing-actions {
+    display: none;
+}
+
+.pip-builder #major-publishing-actions {
+    border-top: 0;
+}
+
+/* Pilo'Press: Layouts */
+
+/* Collection tag */
+.pip_collection {
+    background-color: #0073AA;
+    width: fit-content;
+    margin: 0 auto 10px auto;
+    padding: 2px 8px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: white;
+}
+
+.acfe-modal.-open .acfe-modal-content .acfe-flex-container ul li a:hover .pip_collection {
+    background-color: white;
+    color: #0073AA;
+}
+
+/* Configuration */
+.wpview[data-wpview-type="acf"],
+.wpview[data-wpview-type="pip_title"],
+.wpview[data-wpview-type="pip_thumbnail"],
+.wpview[data-wpview-type="pip_breadcrumb"],
+.wpview[data-wpview-text*="nodiv%3D%22true%22"] {
+    display: inline-block;
+}
+
+.wpview[data-wpview-type="acf"],
+.wpview[data-wpview-type="pip_title"],
+.wpview[data-wpview-type="pip_breadcrumb"] {
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 2px dashed #6c757d;
+}
+
+.pip_button_group p {
+    display: inline-block;
+}
+
+/* Pilo'Press Banner */
+.pip-admin-navigation {
+    background-color: #fff;
+    margin-left: -20px;
+    padding-left: 20px;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.pip-admin-navigation h2 {
+    font-size: 14px;
+    line-height: 2.57143;
+    display: inline-block;
+    padding: 5px 0;
+    margin: 0 10px 0 0;
+}
+
+.pip-admin-navigation .pip-tab-icon {
+    width: 20px;
+    fill: #babbbc;
+    padding: 0;
+    vertical-align: text-bottom;
+
+}
+
+.pip-admin-navigation .pip-tab {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 2.57143;
+    padding: 5px 0;
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.pip-admin-navigation .pip-tab.is-active {
+    border-bottom: #0071a4 solid 3px;
+    /*font-weight: 600;*/
+    padding-bottom: 2px;
+}
+
+.pip-admin-navigation .pip-tab {
+    text-decoration: none;
+    color: #32373c;
+}
+
+.pip-admin-navigation .pip-tab:hover {
+    color: #00a0d2;
+}
+
+/* Hide actions on sync layouts page */
+body.view-sync .tablenav.top {
+    clear: none;
+}
+
+body.view-sync .tablenav.top .alignleft.actions,
+body.view-sync .tablenav.top .tablenav-pages {
+    display: none;
+}
+
+/* Export tool */
+#acf-admin-tool-pilopress_tool_layouts_export ul.acf-checkbox-list {
+    column-width: 200px;
+}
+
+/* Hide ACF action icons by default */
+#acf-group_pip_flexible_main .acf-flexible-content .layout .acf-fc-layout-controls a.acf-icon.hide-icon,
+#acf-group_pip_flexible_header .acf-flexible-content .layout .acf-fc-layout-controls a.acf-icon.hide-icon,
+#acf-group_pip_flexible_footer .acf-flexible-content .layout .acf-fc-layout-controls a.acf-icon.hide-icon {
+    display: none;
+}
+
+/* Show all actions on hover on more actions button */
+#acf-group_pip_flexible_main .acf-flexible-content .layout .acf-fc-layout-controls.show-more-actions a.acf-icon.hide-icon,
+#acf-group_pip_flexible_header .acf-flexible-content .layout .acf-fc-layout-controls.show-more-actions a.acf-icon.hide-icon,
+#acf-group_pip_flexible_footer .acf-flexible-content .layout .acf-fc-layout-controls.show-more-actions a.acf-icon.hide-icon {
+    display: block !important;
+}
+
+/* Layout thumbnail in listing */
+.post-type-acf-field-group td._pip_layout_thumbnail img {
+    width: 144px;
+    height: 72px;
+    object-position: center;
+    object-fit: contain;
+}

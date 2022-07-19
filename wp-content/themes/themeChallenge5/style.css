@@ -1,0 +1,477 @@
+/**
+ * Theme Name: Starter Theme
+ * Author: Pilot'in
+ * Author URI: https://www.pilot-in.com/
+ * Description: Starter Theme to use with Pilo'Press
+ * Version: 0.1
+ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+}
+
+button:focus {
+    outline: none;
+}
+
+ul:not([class]) {
+    @apply list-disc list-inside;
+
+    &>li>ul {
+        @apply ml-8;
+    }
+}
+
+ol:not([class]) {
+    @apply list-decimal list-inside;
+
+    &>li>ol {
+        @apply ml-8;
+    }
+}
+
+ul[class],
+ol[class] {
+    @apply list-none;
+}
+
+img {
+    @apply inline-block;
+
+    /** Fix blurry downscaled images in Chrome */
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/** Images */
+picture {
+    @apply block align-middle;
+
+    &>img {
+        all: inherit;
+    }
+
+    /** Fix when img are replaced with picture */
+    &:not([class*="wp-image"])>img {
+        @apply w-full h-full object-cover;
+    }
+
+}
+
+/** Headings */
+.h1 {
+    /* Mobile size */
+    @media screen and (max-width: 768px) {
+        @apply text-4xl;
+    }
+}
+
+h1 {
+    @apply h1;
+}
+
+.h2 {
+    /* Mobile size */
+    @media screen and (max-width: 768px) {
+        @apply text-3xl;
+    }
+}
+
+h2 {
+    @apply h2;
+}
+
+.h3 {
+    /* Mobile size */
+    @media screen and (max-width: 768px) {
+        @apply text-2xl;
+    }
+}
+
+h3 {
+    @apply h3;
+}
+
+h4 {
+    @apply h4;
+}
+
+h5 {
+    @apply h5;
+}
+
+h6 {
+    @apply h6;
+}
+
+label {
+    @apply cursor-pointer;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea,
+.select2>.selection>.select2-selection {
+    @apply h-auto text-sm border-2 border-gray-500 rounded p-3 !important;
+}
+
+input[type="radio"] {
+    @apply w-4 h-4 m-0 leading-4 !important;
+
+    &:checked {
+        @apply absolute -top-full;
+
+        +label {
+            @apply pl-6 relative cursor-pointer leading-4 inline-block;
+
+            &::before {
+                content: '';
+                @apply absolute w-4 h-4 left-0 top-0 border border-primary rounded-full bg-primary;
+            }
+
+            &::after {
+                content: '';
+                left: 5px;
+                top: 5px;
+                @apply transition-all ease-linear duration-200 w-1.5 h-1.5 absolute bg-white rounded-full;
+            }
+        }
+    }
+
+    &:not(':checked') {
+        @apply absolute -top-full;
+
+        +label {
+            @apply relative cursor-pointer leading-4 inline-block;
+
+            &::before {
+                content: '';
+                @apply absolute w-4 h-4 left-0 top-0 border border-gray rounded-full bg-transparent;
+            }
+
+            &::after {
+                content: '';
+                left: 5px;
+                top: 5px;
+                @apply transition-all ease-linear duration-200 w-1.5 h-1.5 absolute bg-white rounded-full;
+            }
+        }
+    }
+}
+
+/* Fix anchor scroll with sticky menu */
+section {
+	scroll-margin-top: var(--menu-height, 100px);
+}
+
+/* Select2 - Fix margin */
+.select2>.selection>.select2-selection {
+    @apply m-0 !important;
+}
+
+/* Select2 - Fix arrow position */
+.select2>.selection>.select2-selection>.select2-selection__arrow {
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+}
+
+/* Select2 - Fix clear icon position */
+.select2>.selection .select2-selection__clear {
+    @apply px-2 py-0 !important;
+    margin-right: calc(1% + 1em) !important;
+}
+
+/* Select2 - Fix select style */
+.select2>.selection>.select2-selection>.select2-selection__rendered {
+    @apply p-0 !important;
+    line-height: inherit !important;
+}
+
+/** Select2 - Dropdown - Option selected - Hover */
+.select2-results>.select2-results__options>.select2-results__option--highlighted[aria-selected],
+.select2-results>.select2-results__options>.select2-results__option--highlighted[data-selected] {
+    /* @apply bg-secondary !important; */
+}
+
+/* Pagination */
+.pagination {
+    @apply flex items-center justify-center text-black w-full pt-6 border-t border-gray-500;
+
+    .page-numbers {
+        @apply px-1 mr-1;
+    }
+
+    /* Hover, current */
+    .page-numbers.current,
+    .prev:hover,
+    .next:hover {
+        /* @apply text-primary; */
+    }
+}
+
+/** WYSIWYG alignment styles */
+.aligncenter {
+    @apply mx-auto;
+}
+
+.alignleft {
+    @apply mr-auto;
+}
+
+.alignright {
+    @apply ml-auto;
+}
+
+/** Icon Font Awesome - Left position */
+.icon-left {
+    &::before {
+        content: '';
+        font-family: "Font Awesome 5 Pro", sans-serif;
+        @apply inline-block font-normal text-current mr-3 text-center;
+    }
+}
+
+/** Icon Font Awesome - Right position */
+.icon-right {
+    &::after {
+        content: '';
+        font-family: "Font Awesome 5 Pro", sans-serif;
+        @apply inline-block font-normal text-current ml-3 text-center;
+    }
+}
+
+/** Blockquote */
+blockquote {
+    @apply border-l-4 border-white px-16 my-16 ml-6 text-2xl leading-9;
+}
+
+/** WP Video player */
+.mejs-container.wp-video-shortcode.mejs-video .mejs-inner {
+    .mejs-overlay {
+        @apply bg-black bg-opacity-50;
+
+        .mejs-overlay-button {
+            @apply bg-none h-auto w-auto;
+
+            &::after {
+                content: '\f04b';
+                font-family: "Font Awesome 5 Pro", sans-serif;
+                @apply text-white font-black text-2xl;
+            }
+        }
+    }
+
+    .mejs-controls {
+        @apply bg-black bg-opacity-50;
+
+        .mejs-duration-container,
+        .mejs-playpause-button {
+            @apply hidden;
+        }
+
+        .mejs-fullscreen-button {
+            button {
+                @apply bg-none;
+
+                &::after {
+                    content: '\f065';
+                    font-family: "Font Awesome 5 Pro", sans-serif;
+                    @apply text-white font-light text-base leading-4;
+                }
+            }
+        }
+
+        .mejs-volume-button {
+            &.mejs-mute {
+                button {
+                    @apply bg-none;
+
+                    &::after {
+                        content: '\f027';
+                        font-family: "Font Awesome 5 Pro", sans-serif;
+                        @apply text-white font-light text-base leading-4;
+                    }
+                }
+            }
+
+            &.mejs-unmute {
+                button {
+                    @apply bg-none;
+
+                    &::after {
+                        content: '\f6a9';
+                        font-family: "Font Awesome 5 Pro", sans-serif;
+                        @apply text-white font-light text-base leading-4;
+                    }
+                }
+            }
+        }
+
+        .mejs-time-rail {
+            @apply h-full flex flex-col justify-center pt-0;
+
+            .mejs-time-total {
+                @apply mt-0 h-px;
+
+                .mejs-time-float,
+                .mejs-time-buffering {
+                    @apply hidden;
+                }
+
+                .mejs-time-handle,
+                .mejs-time-loaded,
+                .mejs-time-hovered,
+                .mejs-time-current {
+                    @apply h-px;
+                }
+
+                .mejs-time-current {
+                    @apply bg-white;
+                }
+
+                .mejs-time-loaded {
+                    @apply bg-white bg-opacity-50;
+                }
+
+                .mejs-time-handle-content {
+                    @apply h-1.5 w-1.5 rounded-full;
+                    top: -7px;
+                }
+            }
+        }
+    }
+}
+
+/** Pilo'Press Shortcode Icon */
+.pip-shortcode-icon {
+    display: inline-flex !important;
+}
+
+/* ACF Fields */
+.acfe-form {
+    .acf-fields .acf-field {
+        @apply border-0 pt-0 px-0;
+
+        /* Labels */
+        .acf-label label {
+            @apply pl-4 font-normal;
+        }
+
+        /* Input error */
+        &.acf-error {
+            color: #e73434 !important;
+
+            input {
+                border-color: currentColor !important;
+                color: inherit !important;
+            }
+        }
+
+        /* Message error */
+        .acf-notice.-error {
+            @apply bg-transparent border-0 p-0 my-0 ml-1 mr-0 !important;
+        }
+
+        /* add "email icon" inside Email field */
+        &[data-type="email"] {
+            .acf-input-wrap {
+                &::before {
+                    content: '\f0e0';
+                    font-family: "Font Awesome 5 Pro";
+                    @apply absolute top-4 left-4 flex items-center text-base text-current;
+                }
+
+                input {
+                    @apply pl-10 !important;
+                }
+            }
+        }
+
+    }
+
+}
+
+/** Menu item style */
+.menu-item {
+    transition: background .3s ease .05s, border .2s ease 0s;
+
+    /** Menu item parent */
+    &.menu-item-has-children {
+
+        /** Add "chevron" icon next to the link */
+        &>a {
+            &::after {
+                content: "\f078";
+                font-family: "Font Awesome 5 Pro", sans-serif;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+                @apply transition-transform scale-75 transform duration-300 ml-2 inline-block font-normal;
+            }
+        }
+
+        &:hover {
+            &>a {
+                &::after {
+                    @apply rotate-180;
+                }
+            }
+        }
+
+    }
+}
+
+/* Slider dots style */
+.splide__pagination>li>.splide__pagination__page {
+    @apply w-2.5 h-2.5 opacity-100;
+    border: var(--dots-border, 1px solid currentColor);
+    background: var(--dots-bg, transparent);
+
+    &.is-active {
+        background: var(--dots-active-bg, currentColor);
+        transform: var(--dots-active-transform, scale(1));
+    }
+}
+
+/** Table Default Style */
+table {
+    @apply border-collapse table-auto w-full text-sm;
+
+    thead {
+        tr {
+            th {
+                @apply p-2 text-left border-b border-gray;
+            }
+        }
+    }
+
+    tbody {
+        @apply bg-white;
+
+        tr {
+            td {
+                @apply border-b border-gray p-2 text-gray;
+            }
+        }
+    }
+}
+
+form {
+    accent-color: var(--pip-color-primary-500);
+}
+
+/** ----------------------------------
+* Put your project styles here below...
+* ---------------------------------- */
