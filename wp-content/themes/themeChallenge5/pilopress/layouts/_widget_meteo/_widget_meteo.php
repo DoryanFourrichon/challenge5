@@ -46,6 +46,8 @@ $api_response = json_decode($body, true);
 // dd($body);
 // dd($api_response["location"]);
 
+set_transient('api',$body,HOUR_IN_SECONDS);
+
 
 // Configuration
 $advanced_mode   = get_sub_field( 'advanced_mode' );
